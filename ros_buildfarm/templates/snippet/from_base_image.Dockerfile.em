@@ -11,3 +11,6 @@ FROM osrf/ubuntu_armhf:@os_code_name
 FROM @os_name:@os_code_name
 @[end if]@
 @[end if]@
+@[if 'maintainer_name' in locals()]@
+MAINTAINER @maintainer_name
+@[end if]@
