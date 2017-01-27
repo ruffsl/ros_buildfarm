@@ -12,5 +12,7 @@ FROM @os_name:@os_code_name
 @[end if]@
 @[end if]@
 @[if 'maintainer_name' in locals()]@
-MAINTAINER @maintainer_name
+@[if maintainer_name]@
+LABEL maintainer "@maintainer_name"
+@[end if]@
 @[end if]@
